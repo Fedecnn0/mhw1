@@ -1,0 +1,245 @@
+ html{
+     font-size: 10px;
+ }
+
+ body {
+   margin: 0px; 
+ }
+
+ h1 {
+      font-family: Roboto, sans-serif;
+      font-size: 3rem;
+      text-align: center; 
+      max-width: 780px; 
+      color: white;
+      z-index: 1;
+  }
+
+  header {
+    height: 500px; 
+    width: 100%; 
+    background-image: url( sfondo.jpg );
+    display: flex; 
+    position: static; 
+    background-size: cover; 
+    background-position: center;
+    justify-content: center; 
+    align-items: center; 
+  }  
+
+  #overlay { 
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    height: 500px;
+    width: 100%;
+  }
+
+  nav {
+    position: absolute;
+    top: 2%; 
+    right: 2%; 
+  }
+
+  #flex-container1 {
+    display: flex; 
+    flex-direction: row;
+  }
+  
+  .flex-item {
+    font-size: 1.2rem; 
+    font-weight: 900;
+    font-family: Hurricane, sans-serif;
+    border-radius: 20px; 
+    background-color: white ;
+    height: 15px; 
+    width: 40px; 
+    margin: 8px; 
+    text-align: center; 
+  }
+
+  a:link {
+    color: rgb(255, 0, 212);
+  }
+  
+  a:active {
+    color: rgb(133, 11, 247);
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #line { 
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+  }
+
+  #flex-container2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image img  {
+    width:100px;
+    height: 100px;
+    background-size: cover;
+    position: relative;
+    top: -50px;
+    border-radius: 50%;
+    border: 2px solid slategrey;
+  }
+
+  #profile {
+    position: relative;
+    top: -50px;
+  }
+
+  .name {
+    font-family: Smokum, sans-serif ;
+    font-weight: 700;
+    color: rgb(104, 124, 240);
+    font-size: 1.5rem;
+  }
+
+  .access {
+    font-family: Dancing Script, sans-serif;
+    color:rgba(17, 16, 16, 0.801);
+    font-size: .8rem;
+    font-style: italic;
+  }
+
+  .numero { 
+    position: relative;
+    background-color: rgb(83, 6, 170);
+    font-size: 1.5rem;
+    color: white;
+    width: 5%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    margin-left: 5%;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    padding: 1%;
+  }
+
+  .corpo {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    width: 66.7%;
+  }
+
+  .titolo, .numero{
+    
+    font-family: Bebas Neue, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .titolo{
+    font-size: 2rem;
+    margin-bottom: 2px;
+    color: rgb(83, 6, 170);
+  }
+
+  .voto {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.6rem;
+  }
+
+  .voto, .testo, .essential {
+    margin-bottom: 20px;
+    color: black;
+    font-family: Inspiration, sans-serif;
+  }
+
+  .testo {
+    font-size: 1.4rem;
+    line-height: normal;
+  }
+
+  .essential {
+    font-size: 1.1rem;
+    font-style: oblique;
+  }
+ 
+  .image_c {
+    margin-bottom: 120px;
+  }
+
+  section {
+    flex-grow: 1; 
+  }
+
+  footer {
+    display: flex;
+    height: 35px;
+    background-color: rgb(2, 2, 27);
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h2 {
+    font-family: Caveat, sans-serif;
+    font-style: italic;
+    color: white;
+    margin-right: 2%;
+  }
+
+  @media (max-width: 500px) { 
+    html{
+      font-size: 15px;
+    }
+
+    h1 {
+      font-size: 1.1rem;
+    }
+
+    header {
+      height: 300px; 
+    }
+
+    #overlay {
+      height: 300px;
+    }
+
+    .flex-item {
+      display: none;
+    }
+
+    #menu {
+      position: absolute;
+      top: 2%; 
+      right: 2%; 
+      display: flex;
+      flex-direction: column;
+      border: 1px solid rgba(0, 0, 0, 0.295);
+      border-radius: 20%;
+      padding: 1.9%;
+    }
+
+    #menu:hover {
+      background-color: rgba(2, 2, 27, 0.651);
+    }
+
+    .numero {
+      margin-right: 10px;
+      height: 5px;
+      width: 5px;
+      padding: 3%;
+    }
+
+    .image_c {
+      margin-bottom: 80px;
+    }
+
+  }
